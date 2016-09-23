@@ -19,6 +19,7 @@ public class Person {
     public Date getBirthdate() {
         return birthdate;
     }
+    
     public int getAge(){
         return (int)((new Date().getTime() - birthdate.getTime())/31536000000L);
     }
